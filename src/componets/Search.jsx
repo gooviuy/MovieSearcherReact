@@ -16,7 +16,7 @@ function Search({ setMovie }) {
     const result = await axios.get(
       `https://private.omdbapi.com/?plot=full&apikey=bef9c583&t=${nombrePelicula}`
     );
-
+    console.log(result);
     setMovie(result.data);
   };
 
